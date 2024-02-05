@@ -240,9 +240,7 @@ Public Class Book_Form
         End Try
     End Sub
 
-    Private Sub TabPage_menu_Click(sender As Object, e As EventArgs) Handles TabPage_menu.Click
 
-    End Sub
 
 
 

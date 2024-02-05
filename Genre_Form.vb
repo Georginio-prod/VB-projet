@@ -105,4 +105,6 @@
         TextBox1_id.Text = DataGridView1.CurrentRow.Cells(0).Value.ToString()
         TextBox_name.Text = DataGridView1.CurrentRow.Cells(1).Value.ToString()
     End Sub
+
+
 End Class

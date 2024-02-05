@@ -34,14 +34,14 @@ Public Class Authors_Form
         Label_total.Text = Convert.ToString(DataGridView_authors.Rows.Count) + "Authors"
 
         Button_telecharger.Image = Image.FromFile("C:\Users\Georginio\Desktop\Projets\VB\Gestion\IMAGES\book-32.png")
-        Button_showAuteur.Image = Image.FromFile("C:\Users\Georginio\Desktop\Projets\VB\Gestion\IMAGES\book-25.png")
+        'Button_showAuteur.Image = Image.FromFile("C:\Users\Georginio\Desktop\Projets\VB\Gestion\IMAGES\book-25.png")
 
     End Sub
 
     ' Bouton pour l'ajout
     Private Sub Button_add_Click(sender As Object, e As EventArgs) Handles Button_add.Click
 
-        Dim Name As String = TextBox_firstname.Text.Trim()
+        Dim Nom As String = TextBox_firstname.Text.Trim()
         Dim Prenoms As String = TextBox_prenom.Text.Trim()
         Dim Education As String = TextBox_education.Text
         Dim Bio As String = RichTextBox_bio.Text
@@ -56,7 +56,7 @@ Public Class Authors_Form
 
         Else
 
-            If author.addAuthor(Name, Prenoms, Education, Bio) Then
+            If author.addAuthor(Nom, Prenoms, Education, Bio) Then
                 MessageBox.Show("Ajout réussi", "Add", MessageBoxButtons.OK, MessageBoxIcon.Information)
 
                 DataGridView_authors.DataSource = author.getAllAuthors()
@@ -165,12 +165,6 @@ Public Class Authors_Form
     End Sub
 
     'liste des auteurs
-    Private Sub Button_showAuteur_Click(sender As Object, e As EventArgs) Handles Button_showAuteur.Click
-
-        '
-
-
-    End Sub
 
     'télécharger les fichier 
     Private Sub Button_telecharger_Click(sender As Object, e As EventArgs) Handles Button_telecharger.Click

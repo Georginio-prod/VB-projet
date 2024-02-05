@@ -5,18 +5,18 @@ Public Class Authors
     Dim db As New MyDb()
 
     ' Ajout d'auteur
-    Public Function addAuthor(ByVal name As String, ByVal prenoms As String, ByVal Education As String, ByVal bio As String)
-        Dim query As String = "INSERT INTO `authors`(`name`, `prenoms`, `education`, `bio`) VALUES (@name, @prenoms, @education, @bio)"
+    Public Function addAuthor(ByVal Nom As String, ByVal prenoms As String, ByVal Nationalite As String, ByVal bio As String)
+        Dim query As String = "INSERT INTO `authors`(`Nom`, `prenoms`, `nationalite`, `bio`) VALUES (@Nom, @prenoms, @nationalite, @bio)"
         Dim params(3) As MySqlParameter
 
-        params(0) = New MySqlParameter("@name", MySqlDbType.VarChar)
-        params(0).Value = name
+        params(0) = New MySqlParameter("@Nom", MySqlDbType.VarChar)
+        params(0).Value = Nom
 
         params(1) = New MySqlParameter("@prenoms", MySqlDbType.VarChar)
         params(1).Value = prenoms
 
-        params(2) = New MySqlParameter("@education", MySqlDbType.VarChar)
-        params(2).Value = Education
+        params(2) = New MySqlParameter("@nationalite", MySqlDbType.VarChar)
+        params(2).Value = Nationalite
 
         params(3) = New MySqlParameter("@bio", MySqlDbType.VarChar)
         params(3).Value = bio
@@ -30,18 +30,18 @@ Public Class Authors
 
 
     ' Edit d'auteur
-    Public Function editAuthor(ByVal id As Integer, ByVal name As String, ByVal prenoms As String, ByVal Education As String, ByVal bio As String)
-        Dim query As String = "UPDATE `authors` SET `id`=@id,`name`=@name,`prenoms`= @prenoms,`education`=@education,`bio`=@bio WHERE 1"
+    Public Function editAuthor(ByVal id As Integer, ByVal Nom As String, ByVal prenoms As String, ByVal Nationalite As String, ByVal bio As String)
+        Dim query As String = "UPDATE `authors` SET `id`=@id,`Nom`=@Nom,`prenoms`= @prenoms,`Nationalite`=@Nationalite,`bio`=@bio WHERE 1"
         Dim params(4) As MySqlParameter
 
-        params(0) = New MySqlParameter("@name", MySqlDbType.VarChar)
-        params(0).Value = name
+        params(0) = New MySqlParameter("@Nom", MySqlDbType.VarChar)
+        params(0).Value = Nom
 
         params(1) = New MySqlParameter("@prenoms", MySqlDbType.VarChar)
         params(1).Value = prenoms
 
         params(2) = New MySqlParameter("@education", MySqlDbType.VarChar)
-        params(2).Value = Education
+        params(2).Value = Nationalite
 
         params(3) = New MySqlParameter("@bio", MySqlDbType.VarChar)
         params(3).Value = bio

@@ -224,7 +224,7 @@ Partial Class Book_Form
         Guna2HtmlLabel12.BackColor = Color.Transparent
         Guna2HtmlLabel12.Font = New Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
         Guna2HtmlLabel12.ForeColor = Color.White
-        Guna2HtmlLabel12.Location = New Point(662, 289)
+        Guna2HtmlLabel12.Location = New Point(682, 271)
         Guna2HtmlLabel12.Name = "Guna2HtmlLabel12"
         Guna2HtmlLabel12.Size = New Size(104, 32)
         Guna2HtmlLabel12.TabIndex = 42
@@ -390,7 +390,7 @@ Partial Class Book_Form
         Button_supp.BackColor = Color.FromArgb(CByte(192), CByte(0), CByte(0))
         Button_supp.Font = New Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point)
         Button_supp.ForeColor = Color.White
-        Button_supp.Location = New Point(340, 287)
+        Button_supp.Location = New Point(341, 269)
         Button_supp.Name = "Button_supp"
         Button_supp.Size = New Size(123, 34)
         Button_supp.TabIndex = 45
@@ -401,7 +401,7 @@ Partial Class Book_Form
         ' 
         Button_enregistre.BackColor = Color.Transparent
         Button_enregistre.Font = New Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point)
-        Button_enregistre.Location = New Point(123, 287)
+        Button_enregistre.Location = New Point(16, 269)
         Button_enregistre.Name = "Button_enregistre"
         Button_enregistre.Size = New Size(133, 34)
         Button_enregistre.TabIndex = 44
@@ -421,7 +421,7 @@ Partial Class Book_Form
         Guna2TextBox_recherche.FocusedState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
         Guna2TextBox_recherche.Font = New Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point)
         Guna2TextBox_recherche.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        Guna2TextBox_recherche.Location = New Point(785, 289)
+        Guna2TextBox_recherche.Location = New Point(815, 269)
         Guna2TextBox_recherche.Name = "Guna2TextBox_recherche"
         Guna2TextBox_recherche.PasswordChar = ChrW(0)
         Guna2TextBox_recherche.PlaceholderText = ""
@@ -639,10 +639,10 @@ Partial Class Book_Form
         DataGridView_Book.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
         DataGridView_Book.BackgroundColor = Color.Teal
         DataGridView_Book.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridView_Book.Location = New Point(0, 335)
+        DataGridView_Book.Location = New Point(0, 309)
         DataGridView_Book.Name = "DataGridView_Book"
         DataGridView_Book.RowTemplate.Height = 25
-        DataGridView_Book.Size = New Size(1045, 186)
+        DataGridView_Book.Size = New Size(1045, 212)
         DataGridView_Book.TabIndex = 22
         ' 
         ' Guna2TabControl1
